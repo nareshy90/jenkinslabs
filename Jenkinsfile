@@ -1,17 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('Deploy') {
       steps {
         sh '''#!/bin/bash
-echo "Hello World! from Jenkins pipeline"'''
-        echo 'Hello'
-      }
-    }
-
-    stage('release') {
-      steps {
-        build 'release'
+aws cloudformation deploy --template-file ./ec2-demo.yml --stack-name test-cfn-jenkins-pipeline --region ap-southeast-2'''
       }
     }
 
