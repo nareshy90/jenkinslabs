@@ -8,3 +8,5 @@ Resources:
       Tags:
         - Key: Name
           Value: ec2-demo-instance
+
+
