@@ -1,4 +1,4 @@
-Description: Test EC2 Stack1
+Description: Test EC2 Stack2
 Resources:
   MyEC2Instance: 
     Type: AWS::EC2::Instance
