@@ -1,0 +1,10 @@
+Resources:
+  MyEC2Instance: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: "ami-00fde50da249b5ff7"
+      KeyName: telstra-ogw-poc-ec2-key
+      InstanceType: "t2.micro"
+      Tags:
+        - Key: Name
+          Value: ec2-demo-instance
